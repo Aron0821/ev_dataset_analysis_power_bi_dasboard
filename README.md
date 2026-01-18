@@ -86,23 +86,8 @@ All slicers are connected through dimension tables to ensure **cross-filtering a
 3. Observe how all visuals update dynamically
 4. Explore insights across charts, maps, and trend lines
 
----
-
-## 📌 Project Status
-
-✅ Completed  
-📊 Ready for academic submission and portfolio showcase  
-
----
-
 ## 👤 Author
 
 **Aron Shakha**  
 Final Year Project  
 Electric Vehicle Data Analysis using Power BI
-
----
-
-## 📄 License
-
-This project is created for **academic and learning purposes**.
