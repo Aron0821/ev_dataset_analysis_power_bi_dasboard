@@ -1,80 +1,108 @@
-🚗 EV Data Analysis Dashboard
+# ⚡ EV Data Analysis Dashboard
 
-![EV Data Analysis Dashboard](image/final_dashboard.png)
+<p align="center">
+  <img src="image/final_dashboard.png" width="900" alt="EV Data Analysis Dashboard"/>
+</p>
 
-📌 Project Overview
-This project presents an interactive **Electric Vehicle (EV) Data Analysis Dashboard** built using **PostgreSQL, Power BI, and Machine Learning**.  
-The goal of the project is to analyze EV adoption trends, manufacturer performance, EV type distribution, geographic adoption patterns, and compare actual vs predicted EV ranges over time.
+## 📌 Project Overview
 
-The dashboard enables users to explore EV data dynamically using slicers for **EV type, model year, manufacturer, and state**.
+The **EV Data Analysis Dashboard** is an interactive Business Intelligence (BI) solution built using **Power BI** to analyze trends in Electric Vehicle (EV) adoption.  
+This dashboard provides insights into EV growth over time, manufacturer dominance, EV type distribution, city-wise adoption, and the relationship between actual and predicted electric ranges.
 
----
-
-🧩 Key Features
-- 📊 Top Manufacturers Analysis based on total EV registrations  
-- 🔋 EV Type Distribution (BEV vs PHEV)  
-- 📈 EV Growth Over Years to understand adoption trends  
-- 🗺 City-wise EV Adoption Map for geographic insights  
-- 🤖 Actual vs Predicted EV Range using a Machine Learning model  
-- 🎛 Fully Interactive Slicers* affecting all visuals simultaneously  
+The project is designed as a **data-driven decision support system**, enabling users to explore EV data dynamically using slicers and visual interactions.
 
 ---
 
-🛠 Technologies Used
-- PostgreSQL – Data storage, modeling, and SQL analysis  
-- Power BI – Interactive dashboard and data visualization  
-- Python – Machine learning model for EV range prediction  
-- GitHub – Version control and project documentation  
+## 🎯 Objectives
+
+- Analyze **Electric Vehicle growth trends** over the years  
+- Identify **top EV manufacturers**  
+- Visualize **EV type distribution** (BEV vs PHEV)  
+- Understand **city-wise and state-wise EV adoption**  
+- Compare **actual vs predicted electric ranges**  
+- Enable **interactive filtering** across all visuals using slicers  
 
 ---
 
-🗂 Project Structure
-EV-Data-Analysis/
-│
-├── PowerBI/
-│ ├── EV_Data_Analysis.pbix
-│ └── dashboard_screenshots/
-│ └── final_dashboard.png
-│
-├── SQL/
-│ ├── create_tables.sql
-│ ├── views.sql
-│ └── data_cleaning.sql
-│
-├── ML/
-│ ├── ev_range_prediction.py
-│ └── ev_model_training.ipynb
-│
-├── Dataset/
-│ └── Electric_Vehicle_Population_Data.csv
-│
-└── README.md
+## 🧩 Key Features
 
+- 📊 Interactive Power BI dashboard  
+- 🔁 Fully connected slicers (EV Type, Model Year, Make, State)  
+- 🗺️ Geographic visualization using maps  
+- 📈 Trend analysis with line and scatter charts  
+- 🧠 Prediction comparison for EV range analysis  
 
-▶ How to Use the Dashboard
-1. Load the SQL scripts into PostgreSQL  
-2. Open `EV_Analysis.pbix` in Power BI Desktop  
-3. Update PostgreSQL database credentials  
-4. Refresh the data  
-5. Use slicers to explore insights dynamically  
+---
 
+## 🛠️ Tools & Technologies
 
-📊 Dashboard Insights
-- Tesla leads EV manufacturing by a significant margin  
-- Battery Electric Vehicles (BEVs) dominate EV adoption  
-- EV adoption has grown rapidly after 2015  
-- Urban regions show higher EV penetration  
-- Predicted EV range closely follows actual range trends  
+- **Power BI Desktop**
+- **PostgreSQL** (Data Source)
+- **SQL** (Data modeling & transformations)
+- **DAX** (Measures & calculations)
+- **GitHub** (Version control & documentation)
 
+---
 
-🎓 Academic Relevance
-This project demonstrates:
-- Proper data modeling using SQL  
-- Real-world BI dashboard design  
-- Integration of ML predictions into analytics  
-- Professional project versioning using GitHub  
+## 📂 Data Model Overview
 
+The project follows a **star-schema-based data model**, including:
 
-👤 Author
-Aron Shakha  
-Final Year Project – EV Data Analysis
+### Fact Tables
+- `ev_yearly_growth`
+- `ev_make_share`
+- `ev_type_distribution`
+- `ev_city_distribution`
+- `ev_range_prediction`
+
+### Dimension Tables
+- `dim_model_year`
+- `dim_make`
+- `dim_ev_type`
+- `dim_state`
+
+All slicers are connected through dimension tables to ensure **cross-filtering across all visuals**.
+
+---
+
+## 📈 Dashboard Insights
+
+- EV adoption has shown **rapid growth in recent years**
+- **Battery Electric Vehicles (BEV)** dominate the market
+- A few manufacturers account for a large market share
+- Urban regions show higher EV adoption
+- Predicted electric ranges closely align with actual values
+
+---
+
+## 🚀 How to Use
+
+1. Open the Power BI dashboard
+2. Use slicers to filter by:
+   - EV Type
+   - Model Year
+   - Manufacturer
+   - State
+3. Observe how all visuals update dynamically
+4. Explore insights across charts, maps, and trend lines
+
+---
+
+## 📌 Project Status
+
+✅ Completed  
+📊 Ready for academic submission and portfolio showcase  
+
+---
+
+## 👤 Author
+
+**Aron Shakha**  
+Final Year Project  
+Electric Vehicle Data Analysis using Power BI
+
+---
+
+## 📄 License
+
+This project is created for **academic and learning purposes**.
