@@ -39,7 +39,6 @@ The project is designed as a **data-driven decision support system**, enabling u
 - **Power BI Desktop**
 - **PostgreSQL** (Data Source)
 - **SQL** (Data modeling & transformations)
-- **DAX** (Measures & calculations)
 - **GitHub** (Version control & documentation)
 
 ---
